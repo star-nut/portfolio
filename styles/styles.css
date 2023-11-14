@@ -73,6 +73,7 @@ body {
 .top-nav a {
   color: black;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .top-nav li {

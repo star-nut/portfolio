@@ -129,7 +129,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-nav, a {
+nav,
+a {
   text-transform: uppercase;
   text-decoration: none;
 }
