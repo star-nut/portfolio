@@ -11,7 +11,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   body {
-    background: url("/images/white-wall.jpeg") center center fixed no-repeat;
+    background-image: url("/images/white-wall.jpeg") center center fixed no-repeat;
     background-size: cover;
   }
 }
