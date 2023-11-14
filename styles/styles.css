@@ -114,7 +114,7 @@ body {
 .banner .container {
   position: relative;
 }
-.banner video {
+.banner img {
   width: 100%;
   max-width: 100%;
 }
