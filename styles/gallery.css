@@ -2,18 +2,18 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("https://github.com/rosenut/star-nut/blob/site/images/white-wall.jpeg?raw=true");
+  background-image: url(/images/white-wall.jpeg);
   background-repeat: repeat;
   background-size: 1300px 1300px;
   background-attachment: local;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  min-height: 100%;
 }
 @media screen and (max-width: 600px) {
   body {
-    background-image: url("https://github.com/rosenut/star-nut/blob/site/images/white-wall.jpeg?raw=true") center center fixed
-      no-repeat;
+    background-image: url(/images/white-wall.jpeg) center center fixed no-repeat;
     background-size: cover;
   }
 }
