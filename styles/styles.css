@@ -78,7 +78,7 @@ body {
   } */
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 600px) {
   .top-bar .socials {
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ body {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 600px) {
   .top-nav a {
     font-size: 13px;
   }
