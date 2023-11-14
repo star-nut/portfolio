@@ -5,6 +5,9 @@ body {
   background-image: url("/images/white-wall.jpeg");
   background-repeat: repeat;
   background-size: 1300px 1300px;
+  -o-background-size:cover; 
+  -moz-background-size:cover; 
+  -webkit-background-size:cover; 
   margin-left: auto;
   margin-right: auto;
   text-align: center;
