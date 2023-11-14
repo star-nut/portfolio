@@ -1,16 +1,16 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 body {
   background: white;
 }
-.container {
+/* .container {
   width: 1000px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-}
+} */
 
 /* TOP BAR STYLES */
 .top-bar {

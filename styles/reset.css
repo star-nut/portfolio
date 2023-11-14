@@ -3,6 +3,17 @@
    License: none (public domain)
 */
 
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
 html,
 body,
 div,
