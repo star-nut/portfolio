@@ -17,6 +17,7 @@ body {
   background: white;
   margin: 0;
   position: sticky;
+  position: -webkit-sticky;
   top: 0px;
   z-index: 99999999;
 
