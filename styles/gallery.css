@@ -2,7 +2,7 @@
   box-sizing: border-box;
 } */
 body {
-  background-image: url("/images/white-wall.jpeg");
+  background: url("/images/white-wall.jpeg");
   background-repeat: repeat;
   background-size: 1300px 1300px;
   -o-background-size:cover; 
