@@ -120,7 +120,7 @@ body {
   color: white;
   font-size: 18px;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .top-nav li {
