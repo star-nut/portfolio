@@ -191,6 +191,7 @@ body {
   width: 100%;
   max-width: 100%;
   filter: brightness(40%);
+
 }
 
 /* DEDICATION BAR STYLES */
@@ -198,6 +199,7 @@ body {
   text-align: center;
   position: relative;
   width: 100%;
+  
 }
 
 .banner .dedication {
@@ -251,7 +253,7 @@ body {
 }
 #about h1 {
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 25pt;
   padding: 10px;
 }
 #about h2 {
@@ -263,9 +265,7 @@ body {
   padding: 15px;
   background: rgb(199, 29, 29);
 }
-#about #creator {
-  background: rgb(54, 78, 216);
-}
+
 #about a {
   text-decoration: underline;
   text-transform: capitalize;
