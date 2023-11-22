@@ -5,11 +5,12 @@ body {
   background-repeat: repeat;
   background-size: 1300px 1300px;
   background-attachment: local;
-
   text-align: center;
   min-height: 100%;
 }
-
+.gallery {
+  font-weight: 500;
+}
 
 /* TITLE BAR STYLES */
 .title-bar {

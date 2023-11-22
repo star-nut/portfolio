@@ -1,6 +1,5 @@
-body {
-  background: white;
-  overflow-x: hidden;
+.port {
+  font-weight: 500;
 }
 /* BANNER STYLES */
 .banner .container {
@@ -55,7 +54,7 @@ body {
 }
 .banner .dedication {
   font-style: oblique;
-  transform: translate(64%, -100%);
+  transform: translate(64%, -200%);
   font-weight: lighter;
   font-size: 1.7vw;
 }
