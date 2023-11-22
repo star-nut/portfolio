@@ -4,6 +4,9 @@
 body {
   background: white;
 }
+body, html {
+  overflow-x: hidden;
+}
 /* .container {
   width: 1000px;
   max-width: 100%;
@@ -56,21 +59,6 @@ body {
   max-height: 100%;
 } */
 
-.top-bar .socials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  position: absolute;
-  right: 5%;
-}
-
-.top-bar .socials img {
-  display: flex;
-  width: 20px;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-}
 @media screen and (max-width: 865px) {
   /*.top-bar .star-logo img {
     display: flex;
@@ -166,7 +154,7 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 900px) {
   .main-nav .container {
     padding: 10px;
   }
@@ -187,58 +175,75 @@ body {
   position: relative;
   padding: 0px;
 }
-.banner img {
+.banner video, .banner img {
   width: 100%;
   max-width: 100%;
-  filter: brightness(40%);
-
+  filter: brightness(80%);
+}
+.banner img {
+  display:none;
 }
 
-/* DEDICATION BAR STYLES */
+
+/* MINI-BIO BAR STYLES */
 .banner {
   text-align: center;
   position: relative;
   width: 100%;
-  
 }
 
-.banner .dedication {
+.banner .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
+  text-align: left;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-46%, -50%);
 }
 
 .banner h6 {
   color: white;
   font-weight: bolder;
-  text-transform: uppercase;
-  font-size: 2.5vw;
+  /* text-transform: uppercase; */
+  font-size: 5.5vw;
+  text-shadow: 1px 1px 10px black;
 }
 .banner p {
   color: white;
+  text-shadow: 1px 1px 10px black;
+  position: relative;
+}
+.banner .bio {
+  bottom: -1vw;
+  font-size: 2.3vw;
+}
+.banner .dedication {
+  font-style: oblique;
+  transform: translate(64%, -100%);
   font-weight: lighter;
   font-size: 1.7vw;
-  font-style: oblique;
-  position: relative;
-  bottom: -14vw;
 }
 
 @media screen and (max-width: 600px) {
-  .banner p {
+  .banner .dedication {
     font-weight: normal;
+  }
+  .banner video {
+    display: none;
+  }
+  .banner img {
+    display:flex;
   }
 }
 
-/* FILLER CONTENT */
-#about .container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+/* PORTFOLIO STYLES */
+#portfolio .container {
+  display: grid;
+  grid-gap: 40px;
+  align-items: center;
   justify-content: space-around;
   padding-left: 5%;
   padding-right: 5%;
@@ -246,33 +251,79 @@ body {
   max-width: 100%;
 }
 
-#about p, #about h6 {
-  padding: 10px;
-  padding-top: 25px;
-  padding-bottom: 0px;
+#portfolio h6 {
+  font-weight: bold;
 }
-#about h1 {
+#portfolio h1 {
   font-weight: bold;
   font-size: 25pt;
-  padding: 10px;
 }
-#about h2 {
-  color: white;
-  box-shadow: 5px 5px 0px black;
-  font-weight: bold;
-  font-size: 17pt;
-  border-radius: 15px;
-  padding: 15px;
-  background: rgb(199, 29, 29);
+#portfolio p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-#about a {
-  text-decoration: underline;
-  text-transform: capitalize;
-}
-#about {  
+#portfolio {
   width: 100%;
   display: flex;
   padding: 30px;
   padding-top: 50px;
+}
+
+.case {
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  height: 300px;
+  
+  justify-content: center;
+  align-items: center;
+}
+.study1 {
+  background-color: rgb(88, 164, 252);
+  box-shadow: -10px 10px rgb(0, 0, 0);
+}
+.study2 {
+  background-color: rgb(127, 253, 92);
+  box-shadow: -10px 10px rgb(0, 0, 0);
+}
+.case .text {
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .case {
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: gainsboro;
+}
+
+footer .container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+footer .socials img {
+  display: flex;
+  padding: 5px;
+  width: 30px;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
 }
