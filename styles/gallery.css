@@ -42,7 +42,9 @@ body {
 
  /* GALLERY STYLES */
 .gallery .container {
-  padding: 200px;
+  padding: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .gallery .container img {
   height: 100%;
