@@ -54,7 +54,9 @@
 }
 .banner .dedication {
   font-style: oblique;
-  transform: translate(64%, -200%);
+  position: relative;
+  left: 64%;
+  bottom: 5vw;
   font-weight: lighter;
   font-size: 1.7vw;
 }
@@ -62,25 +64,39 @@
 @media screen and (max-width: 600px) {
   .banner .dedication {
     font-weight: normal;
+    bottom: -40px;
+    left: 0%;
+    font-size: 3vw;
   }
   .banner video {
     display: none;
   }
   .banner img {
     display: flex;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 40% 0%;
   }
+  .banner h6 {
+    font-size: 7vw;
+  }
+  .banner .bio {
+    font-size: 3vw;
+  }
+  
 }
 
 /* PORTFOLIO STYLES */
 #portfolio .container {
-  display: grid;
+  display: flex;
+  flex-direction:column;
   grid-gap: 40px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
-  max-width: 100%;
+
+  width: 80%;
+  /* max-width: 100%; */
 }
 
 #portfolio h6 {
@@ -113,17 +129,14 @@
   width: 100%;
   display: flex;
   padding: 30px;
-  padding-top: 50px;
 }
 
 .case {
   padding: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
   border-radius: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
+  display: flex;
+  grid-gap:40px;
+  width: 100%;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -149,16 +162,31 @@
 }
 .case button {
   position: relative;
-  top: 3vw;
+  top: 1vw;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 790px) {
   .case {
     display: flex;
     flex-direction: column;
     grid-gap: 5px;
   }
+  .case img {
+    display:flex;
+    width: 20vw;
+    height:100%;
+
+  }
   .case button {
-    top: 1.5vw;
+    top: 1vw;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  #portfolio .container {
+    width:100%;
+  }
+  #portfolio h1, #portfolio p {
+    font-size: 14pt;
   }
 }
 
