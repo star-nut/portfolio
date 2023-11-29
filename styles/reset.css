@@ -5,11 +5,10 @@
 
 * {
   box-sizing: border-box;
-  font-stretch: 150%;
 }
 body {
   background: white;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .container {
   width: 1000px;
@@ -254,8 +253,8 @@ a {
 .top-nav ul.drop {
   display: none;
   position: absolute;
-  right: -5px;
-  top: 50px;
+  left: -50px;
+  top: 150px;
   z-index: 9999;
   background: rgb(255, 255, 255);
   width: 120%;
@@ -319,7 +318,7 @@ a {
   .top-nav ul.top-level {
     display: none;
     position: absolute;
-    right: -25px;
+    right:-5px;
     top: 50px;
     z-index: 9999;
     background: rgb(255, 255, 255);
