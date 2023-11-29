@@ -235,7 +235,10 @@
     font-size: 13pt;
   }
 }
-
+#portfolio hr {
+  position: relative;
+  top: 10px;
+}
 .resume img {
   width: 100%;
   pointer-events: visible;
