@@ -12,6 +12,9 @@
   max-width: 100%;
   filter: brightness(80%);
 }
+.banner video {
+  display: flex;
+}
 .banner img {
   display: none;
 }
@@ -235,6 +238,7 @@
     font-size: 13pt;
   }
 }
+
 #portfolio hr {
   position: relative;
   top: 10px;
